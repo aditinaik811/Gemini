@@ -1,10 +1,9 @@
 const express = require('express')
 const app = express();
-const router = express.Router()
+
 const bodyParser = require('body-parser')
 const {GoogleGenerativeAI} = require("@google/generative-ai")
-const dotenv = require('dotenv').config()
-const ai =  require("@google/genai");
+
 
 app.use(bodyParser.json())
 
@@ -28,7 +27,7 @@ app.post('/getResponse',(req,res)=>{
     })
 })
 
-app.use('*',(req,res)=>{
+app.use('/{*splat}',(req,res)=>{
     res.status(404).json({
         msg:"Bad Request"
     })
