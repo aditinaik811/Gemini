@@ -33,6 +33,6 @@ app.use('/*splat',(req,res)=>{
         msg:"Bad Request"
     })
 })
-module.exports = app
+module.exports = index
 
 
