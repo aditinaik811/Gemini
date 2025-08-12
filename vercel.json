@@ -1,6 +1,6 @@
 {
     "version":2,
-    "name":"contact-api",
+    "name":"gemini-api",
     "builds":[
         {"src":"app.js","use":"@vercel/node"}
     ],
