@@ -28,7 +28,7 @@ app.post('/getResponse',(req,res)=>{
     })
 })
 
-app.use('/*splat"',(req,res)=>{
+app.use('/*splat',(req,res)=>{
     res.status(404).json({
         msg:"Bad Request"
     })
